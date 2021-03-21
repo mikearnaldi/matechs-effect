@@ -7,12 +7,12 @@ import "../Operator"
  * Partially Ported from https://github.com/0x706b/principia
  */
 import * as A from "../Array"
-import * as C from "../Closure"
-import * as Eq from "../Equal"
 import type { Predicate } from "../Function"
-import * as I from "../Identity"
 import type { Prod, Sum } from "../Newtype"
 import { And, BooleanProd, BooleanSum, Or } from "../Newtype"
+import * as Eq from "../Prelude/Equal"
+import * as C from "../Structure/Closure"
+import * as I from "../Structure/Identity"
 
 export const ConjunctionClosure = C.makeClosure<And>((l, r) =>
   And.wrap(And.unwrap(l) && And.unwrap(r))

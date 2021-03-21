@@ -1,8 +1,8 @@
 import { constant } from "@effect-ts/system/Function"
 
-import { makeAssociative } from "../../src/Associative"
 import * as E from "../../src/Either"
 import * as DSL from "../../src/Prelude/DSL"
+import { makeAssociative } from "../../src/Structure/Associative"
 import * as X from "../../src/XPure"
 
 test("07", () => {

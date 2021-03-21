@@ -1,6 +1,6 @@
 import { flow, pipe } from "@effect-ts/system/Function"
 
-import { indexedF } from "../../src/IndexedT"
+import { indexedF } from "../../src/Transformer/IndexedT"
 import * as IO from "../../src/XPure/XIO"
 
 export type DoorState = "DoorOpened" | "DoorClosed"

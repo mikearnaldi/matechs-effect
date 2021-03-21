@@ -2,6 +2,15 @@
 
 import "../Operator"
 
+import { unsafeCoerce } from "../Function"
+import type { ConstURI } from "../Modules"
+import type { URI } from "../Prelude"
+import * as P from "../Prelude"
+import type { Bounded } from "../Prelude/Bounded"
+import type { Equal } from "../Prelude/Equal"
+import type { Ord } from "../Prelude/Ord"
+import type { Show } from "../Prelude/Show"
+import { makeShow } from "../Prelude/Show"
 /* adapted from https://github.com/gcanti/fp-ts */
 /**
  * The `Const` type constructor, which wraps its first type argument and ignores its second.
@@ -10,17 +19,8 @@ import "../Operator"
  * `Const` has some useful instances. For example, the `Applicative` instance allows us to collect results using a `Monoid`
  * while ignoring return values.
  */
-import type * as As from "../Associative"
-import type { Bounded } from "../Bounded"
-import type { Equal } from "../Equal"
-import { unsafeCoerce } from "../Function"
-import type * as Id from "../Identity"
-import type { ConstURI } from "../Modules"
-import type { Ord } from "../Ord"
-import type { URI } from "../Prelude"
-import * as P from "../Prelude"
-import type { Show } from "../Show"
-import { makeShow } from "../Show"
+import type * as As from "../Structure/Associative"
+import type * as Id from "../Structure/Identity"
 
 /**
  * The `Const` type constructor, which wraps its first type argument and ignores its second.

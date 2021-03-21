@@ -3,7 +3,7 @@ import { pipe } from "@effect-ts/system/Function"
 
 import * as E from "../../src/Either"
 import * as DSL from "../../src/Prelude/DSL"
-import * as ReaderT from "../../src/ReaderT"
+import * as ReaderT from "../../src/Transformer/ReaderT"
 
 namespace ReaderEither {
   export const Monad = ReaderT.monad(E.Monad)

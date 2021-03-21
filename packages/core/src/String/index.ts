@@ -7,14 +7,14 @@ import "../Operator"
  * Partially Ported from https://github.com/0x706b/principia
  */
 import * as A from "../Array"
-import * as C from "../Closure"
-import * as Eq from "../Equal"
 import { pipe } from "../Function"
-import * as I from "../Identity"
 import type { Sum } from "../Newtype"
 import { StringSum } from "../Newtype"
 import * as NA from "../NonEmptyArray"
 import * as O from "../Option"
+import * as Eq from "../Prelude/Equal"
+import * as C from "../Structure/Closure"
+import * as I from "../Structure/Identity"
 
 export const SumClosure = C.makeClosure<Sum<string>>((l, r) =>
   StringSum.wrap(`${StringSum.unwrap(l)}${StringSum.unwrap(r)}`)

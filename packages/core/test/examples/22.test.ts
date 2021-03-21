@@ -4,8 +4,8 @@ import { intersect } from "@effect-ts/system/Utils"
 import * as T from "../../src/Effect"
 import * as Ex from "../../src/Effect/Exit"
 import * as O from "../../src/Option"
-import * as OptionT from "../../src/OptionT"
 import * as P from "../../src/Prelude"
+import * as OptionT from "../../src/Transformer/OptionT"
 
 export namespace EO {
   export const EffectOption = intersect(

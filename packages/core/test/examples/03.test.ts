@@ -1,8 +1,8 @@
 import { pipe } from "@effect-ts/system/Function"
 
 import * as A from "../../src/Array"
-import { makeAssociative } from "../../src/Associative"
 import * as E from "../../src/Either"
+import { makeAssociative } from "../../src/Structure/Associative"
 
 test("03", () => {
   const ValidationApplicative = E.getValidationApplicative(
