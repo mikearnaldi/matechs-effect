@@ -5,6 +5,7 @@
     "baseUrl": ".",
     "target": "ES2018",
     "module": "CommonJS",
+    "outDir": "debug",
     "plugins": [
       {
         "transform": "@effect-ts/tracing-plugin/src/index.ts",
@@ -19,5 +20,6 @@
       },
       { "transform": "./typescript-transform-paths/src/index.ts" }
     ]
-  }
+  },
+  "include": ["scripts/jest-setup-after-env.ts"]
 }
